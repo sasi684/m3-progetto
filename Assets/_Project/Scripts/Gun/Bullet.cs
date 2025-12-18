@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.TryGetComponent(out LifeController life)) // If the collider has a LifeController component, inflict damage
-            life.TakeDamage(20);
+            life.TakeDamage(_damage);
         Destroy(gameObject); // Destroy the bullet after impact with any Collider (Enemy, wall, obstacle etc.)
     }
 }
