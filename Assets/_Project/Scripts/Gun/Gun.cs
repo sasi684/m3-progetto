@@ -28,7 +28,7 @@ public class Gun : MonoBehaviour
     private void Shoot()
     {
         GameObject nearestEnemy = FindNearestEnemy();
-        if (!nearestEnemy)
+        if (nearestEnemy)
         {
             Bullet bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
             Vector3 bulletDirection = (nearestEnemy.transform.position - transform.position).normalized;
