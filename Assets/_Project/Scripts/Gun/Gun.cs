@@ -43,7 +43,7 @@ public class Gun : MonoBehaviour
         GameObject nearestEnemy = null;
         float minDistance = _range;
 
-        foreach (var enemy in _enemyManager.GetEnemiesList())
+        foreach (var enemy in _enemyManager._enemiesList)
         {
             float distance = Vector2.Distance(transform.position, enemy.transform.position);
             if (distance < minDistance)

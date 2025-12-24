@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
 
     private void MoveEnemy()
     {
-        transform.position = Vector3.MoveTowards(transform.position, _player.transform.position, _speed *  Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, _player.transform.position, _speed *  Time.deltaTime);
     }
 
     void OnDestroy()
