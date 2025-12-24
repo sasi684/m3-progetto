@@ -1,18 +1,11 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private List<Enemy> _enemiesList;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public void AddEnemy(Enemy enemy) => _enemiesList.Add(enemy);
+    public void RemoveEnemy(Enemy enemy) => _enemiesList.Remove(enemy);
+    public List<Enemy> GetEnemiesList() => _enemiesList;
 }

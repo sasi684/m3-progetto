@@ -1,18 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float _speed = 4f;
+
+    private EnemyManager _enemyManager;
+
+    void Awake()
     {
-        
+        _enemyManager = FindAnyObjectByType<EnemyManager>();
+        if (!_enemyManager) Debug.LogError($"Nessun enemy manager rilevato per {name}");
+        _enemyManager.AddEnemy(this);
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnDestroy()
     {
-        
+        _enemyManager.RemoveEnemy(this);
     }
 }

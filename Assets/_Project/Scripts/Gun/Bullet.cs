@@ -3,7 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private float _speed = 8f; // Variable used to adjust bullet's speed in the inspector
-    [SerializeField] private float _bulletLifeSpan = 3f; // Variable used to adjust bullet's duration in the inspector
+    [SerializeField] private float _bulletLifeSpan = 5f; // Variable used to adjust bullet's duration in the inspector
     [SerializeField] private int _damage = 20; // Variable used to adjust bullet's damage in the inspector
 
     private Vector2 _direction;
@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.TryGetComponent(out LifeController life)) // If the collider has a LifeController component, inflict damage
+        if (collision.collider.TryGetComponent<LifeController>(out var life)) // If the collider has a LifeController component, inflict damage
             life.TakeDamage(_damage);
         Destroy(gameObject); // Destroy the bullet after impact with any Collider (Enemy, wall, obstacle etc.)
     }
