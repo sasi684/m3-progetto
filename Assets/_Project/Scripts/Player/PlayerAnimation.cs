@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private string _horizontalSpeedParamName = "hSpeed";
+    [SerializeField] private string _verticalSpeedParamName = "vSpeed";
+    [SerializeField] private string _isMovingParamName = "isMoving";
+
+    private Animator _playerAnimator;
+
+    void Awake()
     {
-        
+        _playerAnimator = GetComponentInChildren<Animator>();
+        if (!_playerAnimator) Debug.LogError($"Nessuna componente Animator per l'oggetto {name}");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public void SetHorizontalSpeedParam(float hSpeed) => _playerAnimator.SetFloat(_horizontalSpeedParamName, hSpeed);
+
+    public void SetVerticalSpeedParam(float vSpeed) => _playerAnimator.SetFloat(_verticalSpeedParamName, vSpeed);
+
+    public void SetIsMovingParam(bool isMoving) => _playerAnimator.SetBool(_isMovingParamName, isMoving);
 }
