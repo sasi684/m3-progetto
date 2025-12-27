@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c3b8974229d07ee4ab256ba0698e4df3
+guid: 23b776c9e0e37e24f893c80f7c8d14c3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: S_Fly_0
+      name: U_Death_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 24
-        width: 39
-        height: 44
+        x: 0
+        y: 0
+        width: 48
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bee2dc10bd4b09d4a89dfcac68ab02d9
-      internalID: -1073753264
+      spriteID: 4403005e207811c4dad57d8916451b70
+      internalID: 1406204374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S_Fly_1
+      name: U_Death_1
       rect:
         serializedVersion: 2
-        x: 125
-        y: 24
-        width: 39
-        height: 43
+        x: 48
+        y: 0
+        width: 48
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c2906faabb807f4aa2b5330a1aa497b
-      internalID: -1057664433
+      spriteID: 1b621959b29e2c74c94f8702920190ae
+      internalID: 1911657203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S_Fly_2
+      name: U_Death_2
       rect:
         serializedVersion: 2
-        x: 221
-        y: 23
-        width: 39
-        height: 44
+        x: 96
+        y: 0
+        width: 48
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc5da6fd0c5914548bf8df843b82f384
-      internalID: -1732819060
+      spriteID: 80542cd3058d7eb469a3d8a22cf0faa6
+      internalID: -1152909772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S_Fly_3
+      name: U_Death_3
       rect:
         serializedVersion: 2
-        x: 317
-        y: 23
-        width: 39
-        height: 44
+        x: 144
+        y: 0
+        width: 48
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 913f2620fbe091a4fb078b6d3fc46eb8
-      internalID: 504635994
+      spriteID: 8bed4ecfecb7649468277b159b944884
+      internalID: 662505089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S_Fly_4
+      name: U_Death_4
       rect:
         serializedVersion: 2
-        x: 413
-        y: 23
-        width: 39
-        height: 45
+        x: 192
+        y: 0
+        width: 48
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37647e8031fb2a8488c905b1bf5ca249
-      internalID: 280429367
+      spriteID: 803aa67091943a14bab7a449a3a3ad25
+      internalID: 205824164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S_Fly_5
+      name: U_Death_5
       rect:
         serializedVersion: 2
-        x: 509
-        y: 24
-        width: 39
-        height: 44
+        x: 240
+        y: 0
+        width: 48
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa778fd3df5f68246940652fa23c2878
-      internalID: -1288818517
+      spriteID: feb810677abdc0e4c8469fad147a11e5
+      internalID: 456904217
       vertices: []
       indices: 
       edges: []
@@ -233,12 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      S_Fly_0: -1073753264
-      S_Fly_1: -1057664433
-      S_Fly_2: -1732819060
-      S_Fly_3: 504635994
-      S_Fly_4: 280429367
-      S_Fly_5: -1288818517
+      U_Death_0: 1406204374
+      U_Death_1: 1911657203
+      U_Death_2: -1152909772
+      U_Death_3: 662505089
+      U_Death_4: 205824164
+      U_Death_5: 456904217
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c522701b019f744c9f525d014e0e81f
+guid: 2b4ab050df9852342a21f8ad28c6efb8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,127 +97,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: D_Fly_0
+      name: Boom2_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 26
-        width: 30
-        height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e753ce30485cbef49972af64b66e9b88
-      internalID: -2059646356
+      spriteID: aa6f0f46ee9176245a3c35ff057297b1
+      internalID: 136762101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D_Fly_1
+      name: Boom2_1
       rect:
         serializedVersion: 2
-        x: 127
-        y: 26
-        width: 30
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 666cdeffda9a9b143a266f7e3a9d6069
-      internalID: 1193425687
+      spriteID: 44cdc5981930c68478fe826aa234d830
+      internalID: 2057065540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D_Fly_2
+      name: Boom2_2
       rect:
         serializedVersion: 2
-        x: 223
-        y: 25
-        width: 30
-        height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3555380f5b276b84bb129680b64792d4
-      internalID: -2078434106
+      spriteID: 434f4687ec8fc7d41b21634f8c3de03d
+      internalID: 359621375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D_Fly_3
+      name: Boom2_3
       rect:
         serializedVersion: 2
-        x: 319
-        y: 25
-        width: 30
-        height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4677a2f7d0c8b0a419af2d3c97a06ce3
-      internalID: -209123779
+      spriteID: f88e93d5b68ab8a46a115e7d4204c214
+      internalID: 1120342898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D_Fly_4
+      name: Boom2_4
       rect:
         serializedVersion: 2
-        x: 415
-        y: 25
-        width: 30
-        height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b4b9e71fa17f1346947ab9c8dcdbeb3
-      internalID: -501832146
+      spriteID: 80eda1c6ee1ffb745b916dc39c7b9a61
+      internalID: -1828768138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D_Fly_5
+      name: Boom2_5
       rect:
         serializedVersion: 2
-        x: 511
-        y: 25
-        width: 30
-        height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c62759a377443f44aeea7067847c7fc
-      internalID: 434969125
+      spriteID: 76989a4f3e0e177449427fc98831b821
+      internalID: 604407412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boom2_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cb4a2eb5cb0114a85bc8aef1175360
+      internalID: -911866004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boom2_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd15ed18d1c8da740808dc8ef062b6ae
+      internalID: -1370088335
       vertices: []
       indices: 
       edges: []
@@ -233,12 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      D_Fly_0: -2059646356
-      D_Fly_1: 1193425687
-      D_Fly_2: -2078434106
-      D_Fly_3: -209123779
-      D_Fly_4: -501832146
-      D_Fly_5: 434969125
+      Boom2_0: 136762101
+      Boom2_1: 2057065540
+      Boom2_2: 359621375
+      Boom2_3: 1120342898
+      Boom2_4: -1828768138
+      Boom2_5: 604407412
+      Boom2_6: -911866004
+      Boom2_7: -1370088335
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -2,15 +2,18 @@ using UnityEngine;
 
 public class EnemyAnimation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private string _horizontalSpeedParamName = "hSpeed";
+    [SerializeField] private string _verticalSpeedParamName = "vSpeed";
+
+    private Animator _enemyAnimator;
+
+    void Awake()
     {
-        
+        _enemyAnimator = GetComponentInChildren<Animator>();
+        if (!_enemyAnimator) Debug.LogError($"Nessuna componente Animator per l'oggetto {name}");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public void SetHorizontalSpeedParam(float hSpeed) => _enemyAnimator.SetFloat(_horizontalSpeedParamName, hSpeed);
+
+    public void SetVerticalSpeedParam(float vSpeed) => _enemyAnimator.SetFloat(_verticalSpeedParamName, vSpeed);
 }

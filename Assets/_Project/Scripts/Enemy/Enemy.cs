@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int _damage = 25;
 
     private EnemyManager _enemyManager;
+    private EnemyAnimation _enemyAnimation;
     private PlayerController _player;
 
     void Awake()
@@ -13,6 +14,9 @@ public class Enemy : MonoBehaviour
         _enemyManager = FindAnyObjectByType<EnemyManager>();
         if (!_enemyManager) Debug.LogError($"Nessun enemy manager rilevato per {name}");
         _enemyManager.AddEnemy(this);
+
+        _enemyAnimation = GetComponent<EnemyAnimation>();
+        if (!_enemyAnimation) Debug.LogError($"Per l'oggetto {name} non e' presente una componente EnemyAnimation");
 
         _player = FindAnyObjectByType<PlayerController>();
         if (!_player) Debug.LogError($"Nessun player rilevato nella scena per {name}");
@@ -28,7 +32,10 @@ public class Enemy : MonoBehaviour
 
     private void MoveEnemy()
     {
-        transform.position = Vector2.MoveTowards(transform.position, _player.transform.position, _speed *  Time.deltaTime);
+        Vector3 movingDirection = (_player.transform.position - transform.position).normalized;
+        _enemyAnimation.SetHorizontalSpeedParam(movingDirection.x);
+        _enemyAnimation.SetVerticalSpeedParam(movingDirection.y);
+        transform.position = transform.position + movingDirection * (_speed * Time.deltaTime);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
