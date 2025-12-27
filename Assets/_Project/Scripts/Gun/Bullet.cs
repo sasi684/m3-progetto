@@ -9,6 +9,13 @@ public class Bullet : MonoBehaviour
     private Vector2 _direction;
     public Vector2 Direction { get => _direction; set => _direction = value; } // This property will be used to set the direction when a bullet is instantiated
 
+    private BulletAnimation _bulletAnimation;
+
+    void Awake()
+    {
+        _bulletAnimation = GetComponent<BulletAnimation>();
+    }
+
     void Start()
     {
         Destroy(gameObject, _bulletLifeSpan); // Destroy the bullet after _bulletLifeSpan seconds after it's been instantiated
@@ -23,6 +30,9 @@ public class Bullet : MonoBehaviour
     {
         if (collision.collider.TryGetComponent<LifeController>(out var life)) // If the collider has a LifeController component, inflict damage
             life.TakeDamage(_damage);
-        Destroy(gameObject); // Destroy the bullet after impact with any Collider (Enemy, wall, obstacle etc.)
+
+        _bulletAnimation.SetColliderTrigger();
+        _direction = Vector2.zero;
+        Destroy(gameObject, 0.5f); // Destroy the bullet after impact with any Collider (Enemy, wall, obstacle etc.)
     }
 }
