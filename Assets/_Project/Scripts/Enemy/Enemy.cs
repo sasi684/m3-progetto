@@ -22,6 +22,11 @@ public class Enemy : MonoBehaviour
         if (!_player) Debug.LogError($"Nessun player rilevato nella scena per {name}");
     }
 
+    void Start()
+    {
+        gameObject.SetActive(false); // Disable the enemy until the player picks up the gun
+    }
+
     void Update()
     {
         if (_player)
@@ -30,7 +35,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void MoveEnemy()
+    private void MoveEnemy() // Function to move the enemy if there is a player in the scene
     {
         Vector3 movingDirection = (_player.transform.position - transform.position).normalized;
         _enemyAnimation.SetHorizontalSpeedParam(movingDirection.x);
@@ -38,7 +43,7 @@ public class Enemy : MonoBehaviour
         transform.position = transform.position + movingDirection * (_speed * Time.deltaTime);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision) // If the enemy collides with the player, destroy the enemy and make damage
     {
         if (collision.collider.TryGetComponent<PlayerController>(out var player))
         {
@@ -51,6 +56,6 @@ public class Enemy : MonoBehaviour
 
     void OnDestroy()
     {
-        _enemyManager.RemoveEnemy(this);
+        _enemyManager.RemoveEnemy(this); // Remove the enemy from the list on death
     }
 }

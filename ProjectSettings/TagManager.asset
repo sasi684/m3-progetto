@@ -14,7 +14,7 @@ TagManager:
   - UI
   - Enemy
   - Bullet
-  - 
+  - Obstacle
   - 
   - 
   - 
@@ -41,4 +41,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1253185223
+    locked: 0
+  - name: Floor
+    uniqueID: 3355543391
+    locked: 0
+  - name: Units
+    uniqueID: 3645660241
     locked: 0

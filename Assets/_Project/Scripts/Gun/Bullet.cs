@@ -10,10 +10,12 @@ public class Bullet : MonoBehaviour
     public Vector2 Direction { get => _direction; set => _direction = value; } // This property will be used to set the direction when a bullet is instantiated
 
     private BulletAnimation _bulletAnimation;
+    private Collider2D _collider;
 
     void Awake()
     {
         _bulletAnimation = GetComponent<BulletAnimation>();
+        _collider = GetComponent<Collider2D>();
     }
 
     void Start()
@@ -33,6 +35,7 @@ public class Bullet : MonoBehaviour
 
         _bulletAnimation.SetColliderTrigger();
         _direction = Vector2.zero;
+        _collider.enabled = false;
         Destroy(gameObject, 0.5f); // Destroy the bullet after impact with any Collider (Enemy, wall, obstacle etc.)
     }
 }

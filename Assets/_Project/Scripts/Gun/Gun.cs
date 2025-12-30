@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    [SerializeField] private Bullet _bulletPrefab;
-    [SerializeField] private float _fireRate;
-    [SerializeField] private float _range;
+    [SerializeField] private Bullet _bulletPrefab; // Prefab for the bullet shot
+    [SerializeField] private float _fireRate; // How many bullets shot each second
+    [SerializeField] private float _range; // How far can enemies be spotted
 
-    private EnemyManager _enemyManager;
+    private EnemyManager _enemyManager; // The list of enemies is used in here
     private float _lastShot = 0f;
 
     void Awake()
@@ -25,7 +25,7 @@ public class Gun : MonoBehaviour
         }
     }
 
-    private void Shoot()
+    private void Shoot() // Function to shoot the nearest enemy instantiating the bullet and giving it a direction
     {
         GameObject nearestEnemy = FindNearestEnemy();
         if (nearestEnemy)
@@ -38,12 +38,12 @@ public class Gun : MonoBehaviour
         }
     }
 
-    private GameObject FindNearestEnemy()
+    private GameObject FindNearestEnemy() // Function to find the nearest enemy in range using the list provided by the enemy manager
     {
         GameObject nearestEnemy = null;
         float minDistance = _range;
 
-        foreach (var enemy in _enemyManager._enemiesList)
+        foreach (var enemy in _enemyManager.EnemiesList)
         {
             float distance = Vector2.Distance(transform.position, enemy.transform.position);
             if (distance < minDistance)
