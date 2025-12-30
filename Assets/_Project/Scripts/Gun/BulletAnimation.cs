@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletAnimation : MonoBehaviour
 {
-    [SerializeField] private string _colliderTriggerParamName = "hasCollided";
+    [SerializeField] private string _colliderTriggerParamName = "hasCollided"; // Param name for the collision detection in the animator
 
     private Animator _bulletAnimator;
 

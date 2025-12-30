@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    [SerializeField] private string _horizontalSpeedParamName = "hSpeed";
-    [SerializeField] private string _verticalSpeedParamName = "vSpeed";
-    [SerializeField] private string _isMovingParamName = "isMoving";
+    [SerializeField] private string _horizontalSpeedParamName = "hSpeed"; // Param name for the horizontal speed in the animator
+    [SerializeField] private string _verticalSpeedParamName = "vSpeed"; // Param name for the vertical speed in the animator
+    [SerializeField] private string _isMovingParamName = "isMoving"; // Param name for the movement detection in the animator
 
     private Animator _playerAnimator;
 

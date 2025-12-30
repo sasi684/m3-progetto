@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
         _horizontal = Input.GetAxisRaw("Horizontal");
         _vertical = Input.GetAxisRaw("Vertical");
 
-        if(_horizontal != 0  || _vertical != 0)
+        if(_horizontal != 0  || _vertical != 0) // If the player is moving, pass the values to the animator
         {
             _playerAnimation.SetHorizontalSpeedParam(_horizontal);
             _playerAnimation.SetVerticalSpeedParam(_vertical);
