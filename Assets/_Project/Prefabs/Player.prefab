@@ -46,7 +46,6 @@ GameObject:
   - component: {fileID: 4985557078465215629}
   - component: {fileID: 7413596395575229623}
   - component: {fileID: 1391916095450276408}
-  - component: {fileID: 579408124069047247}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -173,14 +172,6 @@ MonoBehaviour:
   _horizontalSpeedParamName: hSpeed
   _verticalSpeedParamName: vSpeed
   _isMovingParamName: isMoving
---- !u!81 &579408124069047247
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7353154373643434905}
-  m_Enabled: 1
 --- !u!1 &8568734829623410825
 GameObject:
   m_ObjectHideFlags: 0
